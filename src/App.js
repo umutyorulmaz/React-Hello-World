@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import TweetContainer from './components/TweetContainer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+    <TweetContainer status='Enjoy the last green space while you can'/>
+    <TweetContainer status='Brasil gonna win the World Cup in Qatar'/>
+    <TweetContainer status='Karol G is the best singer'/>
+    </>
+    );
+  }
 
 export default App;
